@@ -1,9 +1,7 @@
 package singleton;
 
-import java.util.Properties;
-
 public class SystemConfig {
-    private static Properties config = new Properties();
+    private static MyProperties config = new MyProperties();
     private static SystemConfig instance = new SystemConfig();
 
     private SystemConfig() {
@@ -29,7 +27,7 @@ public class SystemConfig {
 
     public static synchronized void destroyInstance() {
         instance = null;
-        config.clear();
+        config.clearProperties();
     }
 
 }
