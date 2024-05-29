@@ -11,6 +11,7 @@ public class Main {
 
         System.out.println("Inital State 123   " + game.toString());
         manager.saveState(game.save());
+        System.out.println();
 
         game.setPlayerPosition("In Cave");
         game.addItemToInvetory("Shield");

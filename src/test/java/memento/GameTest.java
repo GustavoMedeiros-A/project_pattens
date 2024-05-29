@@ -14,6 +14,7 @@ public class GameTest {
     public void loadMemento() {
         game = new Game();
         manager = new GameStateManager();
+
     }
 
     @Test
